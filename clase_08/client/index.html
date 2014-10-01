@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ingreso TRIQUI en Línea</title>
+	<style type="text/css">
+		input, button
+		{
+			width: 50%;
+			font-size: 20px;
+			margin-top: 20px;
+			text-align: center; 
+		}
+		div
+		{
+			font-size: 20px;
+			font-weight: bold;
+		}
+	</style>
+	<script>
+	window.onload = function()
+	{
+		nom_div("inicia").addEventListener('click', function(event)
+		{
+			var sala = nom_div("sala");
+			var nombre = nom_div("nombre");
+			if(sala.value.length == 0 || nombre.value.length == 0)
+			{
+				if(sala.value.length == 0)
+				{
+					alert("Por favor digita el nombre de la sala");
+					sala.focus();
+				}	
+				else
+				{
+					alert("Por favor digita tu nombre");
+					nombre.focus();
+				}
+			}
+			else
+			{
+				var url = "inicia.html?sala="+ encodeURI(sala.value) + "&nombre=" + encodeURI(nombre.value);
+				//alert("La url es: " + url);
+				window.location = url;
+			}
+		});
+		function nom_div(div)
+		{
+			return document.getElementById(div);
+		}
+	};
+	</script>
+</head>
+<body>
+	<center>
+		<h3>TRIQUI EN TIEMPO REAL - UDEC</h3><br>
+		<img src="img/logo.jpg">
+		<hr>
+		<div>
+			Escribe el nombre de la sala
+		</div>
+		<div>
+			<input type = 'text' id = "sala" placeholder = 'Sala'>
+		</div>
+		<br>
+		<div>
+			Escribe tu nombre
+		</div>
+		<div>
+			<input type = 'text' id = "nombre" placeholder = "Nombre Usuario">
+		</div>
+		<br>
+		<button id = 'inicia'>Iniciar Juego</button>
+	</center>
+
+</body>
+</html>
