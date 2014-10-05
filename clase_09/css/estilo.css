@@ -120,7 +120,7 @@ table
 
 .basepersonaje
 {
-	background-image: url(personaje.png);
+	background-image: url(../img/personaje.png);
 }
 
 .front_1{ background-position: 0 0; width: 64px; height: 64px; } 
@@ -142,7 +142,7 @@ table
 
 .basemundo
 {
-	background-image: url(escenografia.png);
+	background-image: url(../img/escenografia.png);
 }
 
 .avismo{ background-position: 0 0; width: 64px; height: 64px; } 
@@ -155,7 +155,7 @@ table
 
 .borrador
 {
-	background-image: url(imgeditor/borrar.png);
+	background-image: url(../imgeditor/borrar.png);
 	width: 64px;
 	height: 64px;
 }
