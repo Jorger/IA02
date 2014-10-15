@@ -1,0 +1,75 @@
+body
+{
+	background-color: #424100;
+	color: white;
+	font-size: 30px;
+}
+
+table
+{
+	background-color: black;
+}
+
+#chess_board td 
+{
+	height:64px;
+	width:64px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+#personaje
+{
+	width: 64px;
+	height: 64px;
+	/*border: 1px solid blue;
+	background-color: gray;*/
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#escenario
+{
+	margin-top: 10px;
+	position: relative;
+	border: 2px solid white;
+	width: 512px;
+	height: 512px;
+	box-shadow: 2px 2px 1px rgba(30, 30, 30, 0.75);
+}
+
+.basepersonaje
+{
+	background-image: url(../img/personaje.png);
+}
+
+.front_1{ background-position: 0 0; width: 64px; height: 64px; } 
+.front_2{ background-position: -69px 0; width: 64px; height: 64px; } 
+.front_3{ background-position: -138px 0; width: 64px; height: 64px; } 
+.front_4{ background-position: -207px 0; width: 64px; height: 64px; } 
+.left_1{ background-position: -276px 0; width: 64px; height: 64px; } 
+.left_2{ background-position: -345px 0; width: 64px; height: 64px; } 
+.left_3{ background-position: -414px 0; width: 64px; height: 64px; } 
+.left_4{ background-position: -483px 0; width: 64px; height: 64px; } 
+.right_1{ background-position: -552px 0; width: 64px; height: 64px; } 
+.right_2{ background-position: -621px 0; width: 64px; height: 64px; } 
+.right_3{ background-position: -690px 0; width: 64px; height: 64px; } 
+.right_4{ background-position: -759px 0; width: 64px; height: 64px; } 
+.top_1{ background-position: -828px 0; width: 64px; height: 64px; } 
+.top_2{ background-position: -897px 0; width: 64px; height: 64px; } 
+.top_3{ background-position: -966px 0; width: 64px; height: 64px; } 
+.top_4{ background-position: -1035px 0; width: 64px; height: 64px; } 
+
+.basemundo
+{
+	background-image: url(../img/escenografia.png);
+	opacity: 1;
+}
+
+.avismo{ background-position: 0 0; width: 64px; height: 64px; } 
+.viento{ background-position: -114px 0; width: 64px; height: 64px; } 
+.piso{ background-position: -228px 0; width: 64px; height: 64px; } 
+.hedor{ background-position: -342px 0; width: 64px; height: 64px; } 
+.viento_hedor{ background-position: -456px 0; width: 64px; height: 64px; } 
+.wumpus{ background-position: -570px 0; width: 64px; height: 64px; } 
