@@ -20,7 +20,7 @@ Server que envía y recibe las peticiones del cliente para el encendido de los l
 Para instalar las dependiencias necesarias como son Socket.io y Johnny-Five
 
 ```sh
-$ npm iinstall
+$ npm install
 ```
 Ejecutando el archivo package.json
 
