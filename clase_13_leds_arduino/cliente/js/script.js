@@ -6,7 +6,7 @@ window.onload = function()
 
 function inicia()
 {
-	var serverBaseUrl = "http://10.157.4.98:8089";
+	var serverBaseUrl = "http://localhost:8089";
     var socket = io.connect(serverBaseUrl);
     var sessionId = '';
     var conStrobe = 0;
