@@ -1,0 +1,36 @@
+WILFRED CARRION
+561210104
+
+
+var numero =5;
+ var divisor = 2
+var p = parseInt(p);
+var resultado = parImparPrimo(numero);
+console.log("El número "+numero+" es "+resultado);
+ 
+function parImparPrimo(numero) {
+
+  if(numero % 2 == 0) {
+    return "par y no primo";
+  }
+  else {
+    return " no par ";
+  }
+  for (resultado = 2; resultado<p; resultado++){
+  	if (p%resultado == 0){ 
+divisor++; 
+break; 
+} 
+} 
+if (divisor == 2)
+function primo(resultado) {
+  if(resultado % 2 == 0) 
+  {
+    return "no primo";
+  }
+  else {
+    return "primo";
+  }
+
+  }
+}
